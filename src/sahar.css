@@ -1,0 +1,122 @@
+/* ===========================
+   Sahar Page
+=========================== */
+
+.sahar-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  min-height: calc(100vh - 180px);
+}
+.cardIcon{
+    color: red;
+    font-size: 50px !important;
+}
+.page-title {
+  text-align: center;
+  color: #06cff3;
+  font-size: 2.3rem;
+  margin-bottom: .6rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #afec07 !important;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.firstCardMoM,
+.secondCardMom,
+.thirdCardMom,
+.fourthCardMom {
+  border-radius: 22px !important;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: .35s ease;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0,0,0,.12) !important;
+  background-color: hsla(310, 73%, 63%, 0.973) !important;
+}
+
+.firstCardMoM:hover,
+.secondCardMom:hover,
+.thirdCardMom:hover,
+.fourthCardMom:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.firstCard,
+.secondCard,
+.thirdCard,
+.fourthCard {
+  padding: 2rem !important;
+}
+
+/* .firstCardMoM {
+  background: linear-gradient(135deg,#ffe8ef,#fff7fa);
+}
+
+.secondCardMom {
+  background: linear-gradient(135deg,#efe7ff,#faf7ff);
+}
+
+.thirdCardMom {
+  background: linear-gradient(135deg,#e9fff2,#f8fffb);
+}
+
+.fourthCardMom {
+  background: linear-gradient(135deg,#fff5de,#fffdf7);
+} */
+
+.firstCardMoM::before,
+.secondCardMom::before,
+.thirdCardMom::before,
+.fourthCardMom::before {
+  content: "🌸";
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 1.6rem;
+  opacity: .25;
+}
+
+.firstCardMoM::after,
+.secondCardMom::after,
+.thirdCardMom::after,
+.fourthCardMom::after {
+  content: "🌿";
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  font-size: 1.4rem;
+  opacity: .18;
+  color: #afec07;
+}
+
+.MuiTypography-root {
+  line-height: 2 !important;
+  font-size: 1.15rem !important;
+  text-align: center;
+  color: #4d4450;
+  font-weight: 500 !important;
+}
+
+@media (max-width:768px){
+
+  .sahar-page{
+    padding:2rem 1rem 3rem;
+  }
+
+  .page-title{
+    font-size:1.7rem;
+    color: #1be0d0;
+  }
+
+  .MuiTypography-root{
+    font-size:1rem !important;
+    color: #08012e;
+    font-size: 24px !important;
+  }
+}
