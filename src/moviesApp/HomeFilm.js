@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 import useMovies from "../hooks/useMovies";
 const HomeFilm = () => {
     const [search, setSearch] = useState("")
-    const {movies, errorr} = useMovies()
+    const {movies} = useMovies()
     
 
 const handleSubmit = (e)=>{
